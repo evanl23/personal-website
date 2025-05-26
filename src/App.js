@@ -6,37 +6,21 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Connect from './components/Connect';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Resume from './components/Resume';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-
-  return (
-    <div className={ "dark"}>
-      <Header />
-      
-      <main className="bg-white dark:bg-gray-900 text-gray-500 dark:text-white min-h-screen">
-        <Home />
-        <About />
-        <Projects />
-        <Connect />
-      </main>
-      
-      <Footer />
-    </div>
-  );
-  
-  /* 
-  // Alternative: With routing
   return (
     <BrowserRouter>
-      <div className={darkMode ? "dark" : ""}>
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      <div className="dark">
+        <Header />
         
         <main className="bg-white dark:bg-gray-900 text-gray-500 dark:text-white min-h-screen">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
             <Route path="/connect" element={<Connect />} />
           </Routes>
         </main>
@@ -45,7 +29,6 @@ function App() {
       </div>
     </BrowserRouter>
   );
-  */
 }
 
 export default App;
