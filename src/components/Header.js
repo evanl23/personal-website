@@ -1,12 +1,17 @@
-function Header() {
+import { Link } from 'react-router-dom';
+
+import React from 'react';
+import {MdNightsStay, MdWbSunny} from 'react-icons/md';
+
+function Header({}) {
   return (
-    <header>
-      <h1>The Evan Liu Journey</h1>
-      <nav>
-        <a href="#about">About</a> | <a href="#resume">Resume</a> | <a href="#projects">Projects</a> | <a href="#contact">Let's connect!</a> 
+    <header className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+      <nav className="flex justify-between items-center p-5">
+        <h1 className="text-xl">Evan P. Liu</h1>
+
       </nav>
     </header>
   );
 }
 
-export default Header; 
+export default Header;

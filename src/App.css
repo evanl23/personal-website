@@ -1,51 +1,50 @@
-.App {
-  text-align: center;
+/* 
+  App.css - Custom styles that complement Tailwind CSS
+  Most styling is now handled by Tailwind classes directly in the components
+*/
+
+/* Smooth scrolling for the entire app */
+html {
+  scroll-behavior: smooth;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Dark mode transitions */
+.dark {
+  color-scheme: dark;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* For section transitions */
+.section-transition {
+  transition: all 0.5s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-header {
-  background-color: #282c34;
-  padding: 1rem;
-  color: white;
-  text-align: center;
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
 }
 
-nav a {
-  margin: 0 1rem;
-  color: #61dafb;
-  text-decoration: none;
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6B7280;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
 }
