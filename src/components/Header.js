@@ -13,7 +13,7 @@ function Header({}) {
             <span className="font-black text-xl flex items-center">
               {"EvanPLiu".split("").map((letter, index) => {
                 return (//text-5xl text-blue-500 uppercase font-bold
-                  <span key={index} className="hover:text-blue-500 hover:-mt-3 transition-all duration-500 hover:duration-100">
+                  <span key={index} className="hover:text-blue-500 hover:-mt-2 transition-all duration-500 hover:duration-100">
                     {letter}
                   </span>
                 );

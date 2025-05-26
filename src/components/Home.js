@@ -1,4 +1,4 @@
-import {FaLinkedin, FaGithub, FaFileAlt, FaArrowDown} from "react-icons/fa";
+import {FaArrowDown} from "react-icons/fa";
 // import img from "../Assets/profile.jpg";
 
 const Home = () => {
@@ -10,17 +10,39 @@ const Home = () => {
         }
     });
 
+    const spans = document.querySelectorAll('.wave span');
+    function triggerWave() {
+        spans.forEach(span => span.classList.add('animate'));
+        setTimeout(() => {
+            spans.forEach(span => span.classList.remove('animate'));
+        }, 1500); // Animation duration + delay
+        setTimeout(triggerWave, 4000); // Wait before restarting
+    }
+    triggerWave();
+
     return (
         <section className="min-h-screen flex flex-col justify-start items-center p-5 text-center">
-            <h2 className="py-3 text-2xl font-black">Welcome to the journey of...</h2>
-            <h3 className="text-5xl text-blue-500 uppercase font-black">Evan Liu</h3>
+            <h1 className="py-3 text-2xl font-black">Welcome to the journey of...</h1>
+
+            <h2 className="text-6xl text-blue-500 uppercase font-black wave">
+                <span className="text-8xl">E</span>
+                <span>V</span>
+                <span>A</span>
+                <span>N</span>
+                <span className="text-8xl">L</span>
+                <span>I</span>
+                <span>U</span>
+            </h2>
+            
+            <div className="mt-5"></div>
+
             <p className="max-w-xl font-light dark:text-gray-300">
                 Hello! Welcome to my website! I'm passionate about creating elegant solutions through code.
                 Currently, I'm focusing on full-stack web development and AI applications.
                 When I'm not coding, you can find me exploring new technologies or enjoying outdoor activities.
             </p>
 
-            <div className="py-4"></div>
+            <div className="mt-8"></div>
 
             <div>
                 {/* Replace with your actual image */}
@@ -38,7 +60,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="mt-5 down-arrow"> 
+            <div className="mt-10 down-arrow"> 
                 <FaArrowDown className="text-gray-400 animate-bounce text-2xl"/>
             </div>
         </section>
