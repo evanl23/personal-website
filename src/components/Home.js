@@ -12,9 +12,9 @@ const Home = () => {
 
     return (
         <section className="min-h-screen flex flex-col justify-start items-center p-5 text-center">
-            <h2 className="py-3 text-2xl">Welcome to the journey of...</h2>
-            <h3 className="text-5xl text-blue-500 uppercase font-bold">Evan Liu</h3>
-            <p className="max-w-xl font-light text-gray-500 dark:text-gray-400">
+            <h2 className="py-3 text-2xl font-black">Welcome to the journey of...</h2>
+            <h3 className="text-5xl text-blue-500 uppercase font-black">Evan Liu</h3>
+            <p className="max-w-xl font-light dark:text-gray-300">
                 Hello! Welcome to my website! I'm passionate about creating elegant solutions through code.
                 Currently, I'm focusing on full-stack web development and AI applications.
                 When I'm not coding, you can find me exploring new technologies or enjoying outdoor activities.
