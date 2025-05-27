@@ -1,4 +1,3 @@
-import React from 'react';
 import Section from './common/Section';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 

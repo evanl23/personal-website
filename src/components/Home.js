@@ -1,5 +1,5 @@
 import {FaArrowDown} from "react-icons/fa";
-// import img from "../Assets/profile.jpg";
+import img from "../Assets/profile.JPEG";
 
 const Home = () => {
     window.addEventListener('scroll', function () {
@@ -10,15 +10,15 @@ const Home = () => {
         }
     });
 
-    const spans = document.querySelectorAll('.wave span');
-    function triggerWave() {
-        spans.forEach(span => span.classList.add('animate'));
-        setTimeout(() => {
-            spans.forEach(span => span.classList.remove('animate'));
-        }, 1500); // Animation duration + delay
-        setTimeout(triggerWave, 4000); // Wait before restarting
-    }
-    triggerWave();
+    // const spans = document.querySelectorAll('.wave span');
+    // function triggerWave() {
+    //     spans.forEach(span => span.classList.add('animate'));
+    //     setTimeout(() => {
+    //         spans.forEach(span => span.classList.remove('animate'));
+    //     }, 1500); // Animation duration + delay
+    //     setTimeout(triggerWave, 4000); // Wait before restarting
+    // }
+    // triggerWave();
 
     return (
         <section className="min-h-screen flex flex-col justify-start items-center p-5 text-center">
@@ -37,9 +37,10 @@ const Home = () => {
             <div className="mt-5"></div>
 
             <p className="max-w-xl font-light dark:text-gray-300">
-                Hello! Welcome to my website! I'm passionate about creating elegant solutions through code.
-                Currently, I'm focusing on full-stack web development and AI applications.
-                When I'm not coding, you can find me exploring new technologies or enjoying outdoor activities.
+                Hello! So glad you are here! I am currently a Junior studying Computer Science with a minor in Economics at Boston University. 
+                I love the nitty-gritty aspects of programing and enjoy getting down and dirty in low level projects. 
+                Currently, I'm focusing on a startup that aims to cure all time management problems by giving each student a roactive personal assistant.
+                When I'm not coding, you can find me on the slopes of the Cascades.
             </p>
 
             <div className="mt-8"></div>
@@ -49,14 +50,13 @@ const Home = () => {
                 <div 
                     className="w-60 h-60 md:w-72 md:h-72 bg-gray-300 rounded-xl flex items-center justify-center text-gray-500"
                 >
-                    Profile Image
-                    {/* Once you have an image:
+                    {
                     <img 
                         src={img} 
                         alt="Evan Liu" 
                         className="w-60 h-60 md:w-72 md:h-72 object-cover rounded-xl" 
                     />
-                    */}
+                    }
                 </div>
             </div>
 

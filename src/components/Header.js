@@ -1,19 +1,17 @@
 import { Link } from 'react-router-dom';
 
-import React from 'react';
-
 function Header({}) {
 
   return (
     <header className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
       <nav className="flex justify-between items-center p-5">
 
-        <li className="list-none "> {/*"font-bold text-lg cursor-pointer"*/}
+        <li className="list-none"> {/*"font-bold text-lg cursor-pointer"*/}
           <Link href="/">
-            <span className="font-black text-xl flex items-center">
+            <span className="font-black text-2xl flex items-center">
               {"EvanPLiu".split("").map((letter, index) => {
                 return (//text-5xl text-blue-500 uppercase font-bold
-                  <span key={index} className="hover:text-blue-500 hover:-mt-2 transition-all duration-500 hover:duration-100">
+                  <span key={index} className="hover:text-blue-500 hover:-mt-2.5 transition-all duration-500 hover:duration-100">
                     {letter}
                   </span>
                 );
