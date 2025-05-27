@@ -1,5 +1,5 @@
 import {FaArrowDown} from "react-icons/fa";
-import img from "../Assets/profile.JPEG";
+import img from "../Assets/profile2.png";
 
 const Home = () => {
     window.addEventListener('scroll', function () {
@@ -54,7 +54,7 @@ const Home = () => {
                     <img 
                         src={img} 
                         alt="Evan Liu" 
-                        className="w-60 h-60 md:w-72 md:h-72 object-cover rounded-xl" 
+                        className="w-60 h-60 md:w-72 md:h-72 object-cover rounded-xl scale" 
                     />
                     }
                 </div>
