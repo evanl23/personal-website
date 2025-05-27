@@ -11,7 +11,7 @@ function Footer() {
             <p className="text-sm text-fun-gray-light font-medium">
               © {year} {" "}
               <a
-              href="eliu23@bu.edu"
+              href="mailto:eliu23@bu.edu"
               className="text-fun-gray-light font-black">
               Evan Liu.
               </a> 

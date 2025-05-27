@@ -3,7 +3,7 @@ import React from 'react'
 const Section = ({title, subtitle, children}) => {
   return (
     <section className="min-h-fit flex flex-col justify-start items-center py-16 px-5 text-center">
-        <h3 className="py-3 text-3xl lg:text-5xl">
+        <h3 className="py-3 text-3xl lg:text-5xl font-black text-blue-500">
             {title}
         </h3>
 

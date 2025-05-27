@@ -1,5 +1,5 @@
 import Section from './common/Section';
-import {FaLinkedin, FaGithub, FaFileAlt} from "react-icons/fa";
+import {FaLinkedin, FaGithub, FaEnvelope} from "react-icons/fa";
 
 function Connect() {
   const SOCIAL = [
@@ -10,22 +10,22 @@ function Connect() {
         },
         {
             id: 2,
-            link: "https://github.com/evanl23",
-            icon: <FaGithub/>,
+            link: "mailto:eliu23@bu.edu",
+            icon: <FaEnvelope/>,
         },
         {
             id: 3,
-            link: "/Liu_Evan_Resume_APRIL2025.pdf",
-            icon: <FaFileAlt/>
+            link: "https://github.com/evanl23",
+            icon: <FaGithub/>,
         },
     ];
 
   return (
     <Section 
       title="Let's Connect!" 
-      subtitle="Feel free to reach out - I'd love to hear from you!"
+      subtitle=""
     >
-      <div className="flex justify-evenly py-3 lg:py-16 text-4xl w-full md:w-1/3">
+      <div className="flex justify-evenly py-3 lg:py-4 text-4xl w-full md:w-1/3">
         {SOCIAL.map(({id, link, icon}) => (
           <a 
             href={link} 
@@ -41,13 +41,13 @@ function Connect() {
 
       <div className="p-2 text-left w-full flex items-center justify-center">
         <form 
-          action="https://getform.io/f/your-getform-endpoint-id" 
+          action="https://getform.io/f/agdlpykb" 
           method="POST" 
           className="w-full md:w-2/3 lg:w-1/2"
         >
           <div className="w-full">
             <div className="flex flex-col">
-              <label className="capitalize text-sm py-2 font-extralight">Name</label>
+              <label className="capitalize text-sm py-2 font-light">Name</label>
               <input
                 type="text"
                 name="Name"
@@ -56,7 +56,7 @@ function Connect() {
               />
             </div>
             <div className="flex flex-col my-2">
-              <label className="capitalize text-sm py-2 font-extralight">Email</label>
+              <label className="capitalize text-sm py-2 font-light">Email</label>
               <input
                 type="email"
                 name="Email"
@@ -65,7 +65,7 @@ function Connect() {
               />
             </div>
             <div className="flex flex-col my-2">
-              <label className="capitalize text-sm py-2 font-extralight">Message</label>
+              <label className="capitalize text-sm py-2 font-light">Message</label>
               <textarea
                 name="Message"
                 rows="10"
