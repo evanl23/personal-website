@@ -3,6 +3,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import Section from './common/Section';
 
 // Initialize PDF.js worker with local worker
 pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.mjs',import.meta.url,).toString();
@@ -32,7 +33,10 @@ function Resume() {
     setIsLoading(false);
   }
   return (
-    <div className="container mx-auto px-4 py-12">
+    <Section 
+      title="Resume"
+    > 
+    <div className="container mx-auto px-4 py-4">
       <div className="text-center mb-8">
         <a 
           href="/Liu_Evan_Resume_APRIL2025.pdf" 
@@ -85,6 +89,7 @@ function Resume() {
         </p>
       </div>
     </div>
+    </Section>
   );
 }
 

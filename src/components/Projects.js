@@ -46,11 +46,11 @@ function Projects() {
       title="Projects" 
       subtitle="Check out some of my recent work"
     >
-      <div className="grid gap-8 lg:gap-14 lg:grid-cols-2">
+      <div className="container grid gap-8 lg:gap-14 lg:grid-cols-2">
         {projects.map(({ id, title, description, technologies, github, live, image }) => (
           <div 
             key={id} 
-            className="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105"
+            className="dark:bg-gray-800 border-gray-300 border p-2 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:border-blue-500"
           >
             {/* Project Image Placeholder */}
             <div className="h-48 bg-gray-300 dark:bg-gray-700 flex items-center justify-center">

@@ -40,7 +40,7 @@ const Home = () => {
                 Hello! So glad you are here! I am currently a Junior studying Computer Science with a minor in Economics at Boston University. 
                 I love the nitty-gritty aspects of programing and enjoy getting down and dirty in low level projects. 
                 Currently, I'm focusing on a startup that aims to cure all time management problems by giving each student a roactive personal assistant.
-                When I'm not coding, you can find me on the slopes of the Cascades.
+                When I'm not coding, you can find me on the slopes of the Cascade Mountains.
             </p>
 
             <div className="mt-8"></div>

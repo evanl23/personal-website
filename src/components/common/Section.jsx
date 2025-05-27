@@ -7,7 +7,7 @@ const Section = ({title, subtitle, children}) => {
             {title}
         </h3>
 
-        <p className="max-w-xl font-light text-gray-500 mb-10 text-sm md:text-base">
+        <p className="max-w-xl font-black text-gray-300 mb-10 text-sm md:text-base">
             {subtitle}
         </p>
         {children}
