@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      rotate: {
+        '360': '360deg'
+      }
+    },
   },
   plugins: [],
 }
