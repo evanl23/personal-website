@@ -5,39 +5,39 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Personal Portfolio Website",
+      title: "Portfolio Website",
       description: "A responsive portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
       technologies: ["React", "Tailwind CSS", "JavaScript"],
-      github: "https://github.com/yourusername/portfolio",
-      live: "https://your-portfolio-url.com",
-      image: "project1.jpg" // Will be replaced with actual image path
+      github: "https://github.com/evanl23/personal-website",
+      // live: "",
+      image: "/portfolio2.png" 
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A full-stack application for managing tasks and projects with user authentication and real-time updates.",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/yourusername/task-manager",
-      live: "https://your-task-app-url.com",
-      image: "project2.jpg" // Will be replaced with actual image path
+      title: "Personal AI Assistant",
+      description: "A proactive personal assistant that manages deadlines, meetings, and due-dates, all through SMS.",
+      technologies: ["Flask", "Firebase", "Google Cloud Run", "OpenAI Agents Framework"],
+      github: "https://github.com/evanl23/AI-Texting-Assistant",
+      live: "https://textmarley.com/",
+      image: "/marley.png" 
     },
     {
       id: 3,
-      title: "E-commerce Platform",
-      description: "An online shopping platform with product catalog, cart functionality, and secure payment processing.",
-      technologies: ["React", "Redux", "Node.js", "Stripe API"],
-      github: "https://github.com/yourusername/ecommerce",
-      live: "https://your-ecommerce-url.com",
-      image: "project3.jpg" // Will be replaced with actual image path
+      title: "Terminal Geometry Dash",
+      description: "The popular Geometry Dash game by RobTop rebuilt for your terminal.",
+      technologies: ["C", "Linux"],
+      github: "https://github.com/evanl23/GeometryDash",
+      // live: "",
+      image: "/geo.jpg" 
     },
     {
       id: 4,
-      title: "Weather Dashboard",
-      description: "A weather application that provides current conditions and forecasts for any location using weather APIs.",
-      technologies: ["JavaScript", "HTML/CSS", "Weather API"],
-      github: "https://github.com/yourusername/weather-app",
-      live: "https://your-weather-app-url.com",
-      image: "project4.jpg" // Will be replaced with actual image path
+      title: "Trading Engine",
+      description: "Trading Engine Server that hosts servers for trading securities, allows clients to create orders, and match orders between clients.",
+      technologies: ["C#", ".NET"],
+      github: "https://github.com/evanl23/Trading-Engine",
+      // live: "",
+      image: "/trading.avif"
     }
   ];
 
@@ -54,14 +54,12 @@ function Projects() {
           >
             {/* Project Image Placeholder */}
             <div className="h-48 bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
-              <p className="text-gray-600 dark:text-gray-400">Project Image</p>
-              {/* Once you have images:
               <img 
-                src={require(`../Assets/${image}`)} 
+                src={require(`../Assets${image}`)} 
                 alt={title}
                 className="w-full h-full object-cover" 
               /> 
-              */}
+             
             </div>
             
             {/* Project Details */}
@@ -97,7 +95,7 @@ function Projects() {
                   rel="noopener noreferrer"
                   className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                 >
-                  <FaExternalLinkAlt className="mr-2" /> Live Demo
+                  <FaExternalLinkAlt className="mr-2" /> Take me there!
                 </a>
               </div>
             </div>

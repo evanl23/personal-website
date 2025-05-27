@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 
 // Initialize PDF.js worker with local worker
 pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.mjs',import.meta.url,).toString();
 
-
 function Resume() {
   const [width, setWidth] = useState(1200);
-  const [numPages, setNumPages] = useState(1000);
+  const [numPages, setNumPages] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState(null);
   
@@ -58,7 +58,7 @@ function Resume() {
           </div>
         )}
         
-        <Document file='Liu_Evan_Resume_APRIL2025.pdf' onLoadSuccess={onDocumentLoadSuccess} onLoadError={onDocumentLoadError}
+        <Document file='/Liu_Evan_Resume_APRIL2025.pdf' onLoadSuccess={onDocumentLoadSuccess} onLoadError={onDocumentLoadError}
           loading={null}
           className="flex justify-center w-full"
         >
