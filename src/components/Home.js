@@ -36,7 +36,7 @@ const Home = () => {
             
             <div className="mt-5"></div>
 
-            <p className="max-w-xl font-light dark:text-gray-300">
+            <p className="max-w-xl font-black dark:text-gray-300">
                 Hello! So glad you are here! I am currently a Junior studying Computer Science with a minor in Economics at Boston University. 
                 I love the nitty-gritty aspects of programing and enjoy getting down and dirty in low level projects. 
                 Currently, I'm focusing on a startup that aims to cure all time management problems by giving each student a roactive personal assistant.
@@ -60,7 +60,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="mt-10 down-arrow"> 
+            <div className="mt-8 down-arrow"> 
                 <FaArrowDown className="text-gray-400 animate-bounce text-2xl"/>
             </div>
         </section>
