@@ -47,7 +47,7 @@ function Resume() {
       </div>
       
     <div className="flex justify-center">
-      <div className="w-full max-6-4xl mx-auto shadow-lg rounded-lg overflow-hidden bg-white p-4">
+      <div className="w-full max-w-5xl mx-auto shadow-lg rounded-lg overflow-hidden bg-white p-4">
         {isLoading && (
           <div className="flex justify-center items-center h-[800px]">
             <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-600"></div>
