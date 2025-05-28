@@ -40,13 +40,14 @@ function Header() {
 
         {/* Mobile navbar */}
         <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
+            <button onClick={() => setIsOpen(!isOpen)} className=" burger visible focus:outline-none aria-label" aria-label='Toggle menu'>
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
         </div>
 
         {isOpen && //Check if mobile menue is open
-          <div className="md:hidden font-black text-l flex gap-7 ">
+          <div className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden bg-white dark:bg-gray-900 ${
+                    isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0' }`}>
             < Link to="/" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500" onClick={() => setIsOpen(false)}>
               Home
             </Link>
