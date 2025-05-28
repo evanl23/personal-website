@@ -89,14 +89,16 @@ function Projects() {
                 >
                   <FaGithub className="mr-2" /> GitHub
                 </a>
-                <a 
+                { live ? ( // Check if link exists. If so, add. Leave blank otherwise
+                  <a 
                   href={live}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                 >
                   <FaExternalLinkAlt className="mr-2" /> Take me there!
-                </a>
+                </a> )
+                : null}
               </div>
             </div>
           </div>
