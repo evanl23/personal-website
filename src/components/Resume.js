@@ -47,7 +47,7 @@ function Resume() {
         </a>
       </div>
       
-    <div className="flex justify-center">
+    <div className="w-full mx-auto shadow-lg rounded-lg overflow-x-auto bg-white p-4">
       <div className="w-full max-w-4xl mx-auto shadow-lg rounded-lg overflow-hidden bg-white p-4">
         {isLoading && (
           <div className="flex justify-center items-center h-[800px]">
@@ -64,12 +64,11 @@ function Resume() {
         
         <Document file='/Liu_Evan_Resume_APRIL2025.pdf' onLoadSuccess={onDocumentLoadSuccess} onLoadError={onDocumentLoadError}
           loading={null}
-          className="flex justify-center w-full"
+          className="flex justify-center"
         >
           {numPages && (
             <Page 
               pageNumber={1} 
-              scale={width > 786 ? 1.5 : 0.8} 
               renderTextLayer={true}
               renderAnnotationLayer={true}
               width={Math.min(width * 0.9, 800)}
