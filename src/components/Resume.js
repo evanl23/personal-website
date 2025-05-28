@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import Section from './common/Section';
 
 // Initialize PDF.js worker with local worker
@@ -47,8 +46,8 @@ function Resume() {
         </a>
       </div>
       
-    <div className="w-full mx-auto shadow-lg rounded-lg overflow-x-auto bg-white p-4">
-      <div className="w-full max-w-4xl mx-auto shadow-lg rounded-lg overflow-hidden bg-white p-4">
+    <div className="flex justify-center">
+      <div className="w-full max-6-4xl mx-auto shadow-lg rounded-lg overflow-hidden bg-white p-4">
         {isLoading && (
           <div className="flex justify-center items-center h-[800px]">
             <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-600"></div>
