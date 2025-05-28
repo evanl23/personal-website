@@ -46,7 +46,7 @@ function Header() {
         </div>
       </nav>
 
-      <div className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden dark:bg-gray-900 absolute right-6 top-20 shadow-lg backdrop-blur-md dark:bg-gray-900/80 rounded-lg p-6 space-y-4 text-right z-50${
+      <div className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden dark:bg-gray-900 absolute z-50 right-6 top-20 shadow-lg backdrop-blur-md dark:bg-gray-900/80 rounded-lg p-6 space-y-4 text-right${
                     isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0' }`}> 
         <div className="flex flex-col gap-4 px-6 pb-6 pt-2 font-black text-l">
           < Link to="/" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500" onClick={() => setIsOpen(false)}>

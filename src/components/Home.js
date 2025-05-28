@@ -24,7 +24,7 @@ const Home = () => {
         <section className="min-h-screen flex flex-col justify-start items-center p-2 text-center">
             <h1 className="py-3 text-2xl font-black">Welcome to the journey of...</h1>
 
-            <h2 className="text-6xl text-blue-500 uppercase font-black wave">
+            <h2 className="text-6xl text-blue-500 uppercase font-black wave z-10">
                 <span className="text-8xl">E</span>
                 <span>V</span>
                 <span>A</span>
