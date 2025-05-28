@@ -9,7 +9,7 @@ function Projects() {
       description: "A responsive portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
       technologies: ["React", "Tailwind CSS", "JavaScript"],
       github: "https://github.com/evanl23/personal-website",
-      live: "evanpliu.com",
+      live: "https://evanpliu.com",
       image: "/portfolio2.png" 
     },
     {
