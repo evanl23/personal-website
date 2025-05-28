@@ -39,7 +39,7 @@ function Header() {
         </div>
 
         {/* Mobile navbar */}
-        <div className="md:hidden">
+        <div className="justify-between flex md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className=" burger visible focus:outline-none aria-label" aria-label='Toggle menu'>
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
