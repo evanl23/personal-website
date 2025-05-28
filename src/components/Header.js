@@ -45,9 +45,9 @@ function Header() {
             </button>
         </div>
 
-        {isOpen && //Check if mobile menue is open
-          <div className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden bg-white dark:bg-gray-900 ${
-                    isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0' }`}>
+        <div className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden bg-white dark:bg-gray-900 ${
+                    isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0' }`}> 
+          <div className="flex flex-col gap-4 px-6 pb-6 pt-2 font-black text-l">
             < Link to="/" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500" onClick={() => setIsOpen(false)}>
               Home
             </Link>
@@ -61,7 +61,7 @@ function Header() {
               Connect
             </Link>
           </div>
-        }
+        </div>
       </nav>
     </header>
   );
