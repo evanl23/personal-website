@@ -23,7 +23,7 @@ const ImageShuffler = () => {
         <img
           key={i}
           src={src}
-          alt={`Image ${i}`}
+          alt={`${i}`}
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
             i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'
           }`}
