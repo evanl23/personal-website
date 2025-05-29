@@ -39,9 +39,9 @@ const Home = () => {
 
             <p className="max-w-3xl font-black text-xl dark:text-gray-300">
                 Hello! So glad you are here! I am a Junior studying Computer Science at Boston University. 
-                I love the nitty-gritty aspects of programing and enjoy getting down and dirty in low level projects. 
-                Currently
-                <a href="/about" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">...</a>
+                I love the nitty-gritty aspects of programing and enjoy getting down and dirty in low level projects. {" "}
+                
+                <a href="/about" class="font-medium dark:text-blue-500 hover:dark:text-blue-700">Currently...</a>
             </p>
 
             <div className="mt-7"></div>

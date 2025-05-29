@@ -27,13 +27,16 @@ function Header() {
           < Link to="/" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500">
             Home
           </Link>
+          <Link to="/about" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500">
+            About
+          </Link>
           <Link to="/projects" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500">
             Projects
           </Link>
           <Link to="/resume" className=" dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500">
             Resume
           </Link>
-            <Link to="/connect" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500">
+          <Link to="/connect" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500">
             Connect
           </Link>
         </div>
@@ -51,6 +54,9 @@ function Header() {
         <div className="flex flex-col gap-4 px-6 pb-6 pt-2 font-black text-l">
           < Link to="/" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500" onClick={() => setIsOpen(false)}>
             Home
+          </Link>
+          <Link to="/about" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500">
+            About
           </Link>
           <Link to="/projects" className="dark:text-gray-400 dark:hover:text-white transition-colors hover:rotate-360 transition-transform duration-500" onClick={() => setIsOpen(false)}>
             Projects

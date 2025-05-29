@@ -12,7 +12,7 @@ const ImageShuffler = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 3 seconds
+    }, 4000); // Change image every 4 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [images.length]);
