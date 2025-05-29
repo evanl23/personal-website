@@ -65,6 +65,15 @@ function Resume() {
           loading={null}
           className="flex justify-center"
         >
+          {numPages && (
+            <Page 
+              pageNumber={1} 
+              renderTextLayer={true}
+              renderAnnotationLayer={true}
+              width={Math.min(width * 0.9, 800)}
+              className="mx-auto"
+            />
+          )}
         </Document>
       </div>
     </div>
