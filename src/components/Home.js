@@ -23,21 +23,21 @@ const Home = () => {
 
     return (
         <section className="min-h-screen flex flex-col justify-start items-center p-2 text-center">
-            <h1 className="mt-5 py-3 text-3xl font-black">Welcome to the journey of...</h1>
+            <h1 className="mt-5 py-3 text-2xl font-black md:text-3xl">Welcome to the journey of...</h1>
 
-            <h2 className="text-7xl text-blue-500 uppercase font-black wave z-10">
-                <span className="text-9xl">E</span>
+            <h2 className="text-6xl text-blue-500 uppercase font-black wave z-10 md:text-7xl">
+                <span className="text-8xl md:text-9xl">E</span>
                 <span>V</span>
                 <span>A</span>
                 <span>N</span>
-                <span className="text-9xl">L</span>
+                <span className="text-8xl md:text-9xl">L</span>
                 <span>I</span>
                 <span>U</span>
             </h2>
             
             <div className="mt-5"></div>
 
-            <p className="max-w-3xl font-black text-xl dark:text-gray-300">
+            <p className="max-w-3xl font-black text-lg dark:text-gray-300 md:text-xl">
                 Hello! So glad you are here! I am a Junior studying Computer Science at Boston University. 
                 I love the nitty-gritty aspects of programing and enjoy getting down and dirty in low level projects. {" "}
                 

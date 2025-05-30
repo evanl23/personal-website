@@ -24,7 +24,7 @@ function About() {
                         When I'm not coding, you can find me on the slopes of the Cascade Mountains or in the water at the local pool.
                     </p>
                 </div>
-                <div className="flex flex-col gap-4 md:w-1/2 items-center">
+                <div className="flex flex-col gap-4 w-full md:w-1/2 items-center">
                     <ImageShuffler />
                 </div>
             </div>
