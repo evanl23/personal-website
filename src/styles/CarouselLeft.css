@@ -1,0 +1,107 @@
+:root {
+  --num-items: 12;
+  --item-width: 120px;
+  --mobile-item-width: 100px;
+}
+
+.carousel-outer-container {
+  position: relative;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 45s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: var(--item-width);
+}
+
+/* Fade effects for smooth edge transitions */
+.carousel-fade-left,
+.carousel-fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carousel-fade-left {
+  left: 0;
+  background: linear-gradient(to right, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(255, 255, 255, 0) 100%);
+}
+
+.carousel-fade-right {
+  right: 0;
+  background: linear-gradient(to left, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(255, 255, 255, 0) 100%);
+}
+
+/* Dark mode fade effects */
+.dark .carousel-fade-left {
+  background: linear-gradient(to right, 
+    rgb(17, 24, 39) 0%, 
+    rgba(17, 24, 39, 0) 100%);
+}
+
+.dark .carousel-fade-right {
+  background: linear-gradient(to left, 
+    rgb(17, 24, 39) 0%, 
+    rgba(17, 24, 39, 0) 100%);
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    width: var(--mobile-item-width);
+  }
+  
+  .carousel-track {
+    animation: scroll 40s linear infinite;
+  }
+  
+  .carousel-fade-left,
+  .carousel-fade-right {
+    width: 50px;
+  }
+}
+
+/* Pauses the animation when user hovers over the carousel */
+.carousel-container:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Dynamic calculation based on number of items and item width */
+    transform: translateX(calc(var(--item-width) * var(--num-items) * -1));
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(var(--mobile-item-width) * var(--num-items) * -1));
+    }
+  }
+}
+

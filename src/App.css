@@ -48,3 +48,7 @@ html {
 .dark ::-webkit-scrollbar-thumb:hover {
   background: #9CA3AF;
 }
+
+/* Import for Carousel styles */
+@import './styles/CarouselLeft.css';
+@import './styles/CarouselRight.css';
