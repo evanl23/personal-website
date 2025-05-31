@@ -70,23 +70,25 @@ const Home = () => {
                 <FaArrowDown className="text-gray-400 animate-bounce text-2xl"/>
             </div>
 
-        <div className="mt-5"></div>
+            <div className="mt-5"></div>
 
-        <div className="py-20 px-10">
-            <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Experience</h3>
-            <Timeline events={events}/>
-        </div>
+            <div className="py-20 px-10">
+                <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Experience</h3>
+                <Timeline events={events}/>
+            </div>
 
-        {/* Skills Carousel */}
-        <div className="w-full max-w-screen-lg mx-auto px-4">
-            <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Skills</h3>
-            <main1 className="flex justify-center items-center bg-transparent py-8">
-                <CarouselR skills={skills} />
-            </main1>
-            {/* <main className="flex justify-center items-center bg-transparent py-4">
-                <CarouselR skills={skills} />
-            </main> */}
-        </div>
+            {/* Skills Carousel */}
+            <div className="w-full max-w-screen-lg mx-auto px-4">
+                <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Skills</h3>
+                <main1 className="flex justify-center items-center bg-transparent py-8">
+                    <CarouselR skills={skills} />
+                </main1>
+                {/* <main className="flex justify-center items-center bg-transparent py-4">
+                    <CarouselR skills={skills} />
+                </main> */}
+            </div>
+
+            <div className="mt-5"></div>
 
         </section>
     );

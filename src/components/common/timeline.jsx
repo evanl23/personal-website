@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 const Timeline = ({events}) => {
     return (
-        <div className="flex flex-col gap-y-10 w-full my-4"> 
+        <div className="flex flex-col gap-y-4 md:gap-y-8 w-full my-4"> 
             <Circle />
             {
                 events.map((event,key) => {
