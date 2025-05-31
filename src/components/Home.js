@@ -99,9 +99,15 @@ const Home = () => {
                 </main> */}
             </div>
 
+            <div className="container mx-auto px-4">
+                <div className="mt-5 py-3 text-2xl font-black md:text-3xl text-right w-full">
+                    Thanks for visiting, <br /> see you later! {" "}
+                    <a href="/connect" className="handwave">👋</a>
+                </div>
+            </div>
+            
             <div className="mt-5"></div>
 
-            <h1 className="mt-5 py-3 text-2xl font-black md:text-3xl">...See you later! </h1>
         </section>
     );
 };
