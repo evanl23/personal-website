@@ -2,6 +2,7 @@ import React from "react";
 import {FaArrowDown} from "react-icons/fa";
 import img from "../Assets/profile2.png";
 import Timeline from "./common/timeline";
+import MobileTimeline from "./common/mobileTimeline";
 import { events } from "./data/data.ts";
 import CarouselR from "./common/CarouselRight.js";
 import { skills } from "./data/data.ts";
@@ -72,9 +73,19 @@ const Home = () => {
 
             <div className="mt-5"></div>
 
-            <div className="py-20 px-10">
+            <div className="py-20 px-10 hidden lg:block">
                 <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Experience</h3>
+                <div className="py-4"></div>
+
                 <Timeline events={events}/>
+            </div>
+
+            {/* Mobile timeline */}
+            <div className="w-full max-w-screen-lg mx-auto py-20 px-4 lg:hidden">
+                <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Experience</h3>
+                <div className="py-6 px-10">
+                    <MobileTimeline events={events}/>
+                </div>
             </div>
 
             {/* Skills Carousel */}
