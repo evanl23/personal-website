@@ -44,7 +44,7 @@ const EventCard = ({title, company, date, arrowDirection}) => {
         <div className={`transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl bg-gray-700 border-b-4 
         flex flex-col gap-y-2 shadow-md rounded-xl p-4 w-full
         ${arrowDirection === 'left' ? 'arrow-right' : 'arrow-left'} `}>
-            <div className="text-slate-200 font-black text-lg md:text-2xl">
+            <div className="text-slate-200 font-black text-md md:text-2xl">
                 {title}
             </div>
 
@@ -52,7 +52,7 @@ const EventCard = ({title, company, date, arrowDirection}) => {
                 {company}
             </div>
 
-            <div className="text-slate-300 text-md md:text-lg font-bold text-gray-300">
+            <div className="text-slate-300 text-sm md:text-lg font-bold text-gray-300">
                 {date}
             </div>
         </div>
