@@ -1,6 +1,10 @@
 import React from "react";
 import {FaArrowDown} from "react-icons/fa";
 import img from "../Assets/profile2.png";
+import Timeline from "./common/timeline";
+import { events } from "./data/data.ts";
+import CarouselR from "./common/CarouselRight.js";
+import { skills } from "./data/data.ts";
 
 const Home = () => {
     window.addEventListener('scroll', function () {
@@ -41,7 +45,7 @@ const Home = () => {
                 Hello! So glad you are here! I am a Junior studying Computer Science at Boston University. 
                 I love the nitty-gritty aspects of programing and enjoy getting down and dirty in low level projects. {" "}
                 
-                <a href="/about" class="font-medium dark:text-blue-500 hover:dark:text-blue-700">Currently...</a>
+                <a href="/about" className="font-medium dark:text-blue-500 hover:dark:text-blue-700">Currently...</a>
             </p>
 
             <div className="mt-7"></div>
@@ -62,21 +66,28 @@ const Home = () => {
 
             <div className="mt-5"></div>
 
-            {/* <Link
-                to="/about" 
-                className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-black text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
-                >
-                <span className="inline-flex items-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-                    About me
-                    <svg className="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </span>
-            </Link> */}
-
             <div className="mt-5 down-arrow"> 
                 <FaArrowDown className="text-gray-400 animate-bounce text-2xl"/>
             </div>
+
+        <div className="mt-5"></div>
+
+        <div className="py-20 px-10">
+            <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Experience</h3>
+            <Timeline events={events}/>
+        </div>
+
+        {/* Skills Carousel */}
+        <div className="w-full max-w-screen-lg mx-auto px-4">
+            <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Skills</h3>
+            <main1 className="flex justify-center items-center bg-transparent py-8">
+                <CarouselR skills={skills} />
+            </main1>
+            {/* <main className="flex justify-center items-center bg-transparent py-4">
+                <CarouselR skills={skills} />
+            </main> */}
+        </div>
+
         </section>
     );
 };

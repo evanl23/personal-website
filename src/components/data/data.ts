@@ -54,3 +54,36 @@ export const skills: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
   },
 ];
+
+type Event = {
+  title: string,
+  company: String
+  description: string,
+  direction: string
+  date: String
+  style?: object
+};
+
+export const events: Event[] = [
+  {
+    title: "Co-founder / Backend Engineer",
+    company: "TextMarley",
+    description: "Founded own company with 2 teammates",
+    direction: "right",
+    date: "January 2025 - Present"
+  },
+  {
+    title: "Senior Quantitative Developer",
+    company: "BU Finance and Investment Club",
+    description: "Founded own company with 2 teammates",
+    direction: "left",
+    date: "September 2023 - December 2024"
+  },
+  { 
+    title: "Professional Ski Instructor",
+    company: "Ullr Snow Sports",
+    description: "Founded own company with 2 teammates",
+    direction: "right",
+    date: "December 2019 - March 2023"
+  }
+]
