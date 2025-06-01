@@ -10,7 +10,7 @@ function Projects() {
       technologies: ["React", "Tailwind CSS", "JavaScript"],
       github: "https://github.com/evanl23/personal-website",
       live: "https://evanpliu.com",
-      image: "/portfolio2.png" 
+      image: "/portfolio3.png" 
     },
     {
       id: 2,
