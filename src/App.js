@@ -21,8 +21,8 @@ function App() {
   const animationSettings = {
     letterDelay: 800,      // Time between each letter appearing
     fadeOutDelay: 2000,    // Time before fade out starts
-    slideUpDelay: 2100,    // Time before slide up starts - background will slide up here
-    completeDelay: 4000,   // Increased to allow time for the background to slide up completely
+    slideUpDelay: 2000,    // Time before slide up starts - background will slide up here
+    completeDelay: 3000,   // Increased to allow time for the background to slide up completely
     backgroundColor: "#FFFFFF", // Background color
     textColor: "#111827"   // Text color
   };

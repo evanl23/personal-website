@@ -79,9 +79,6 @@ function Resume() {
     </div>
       
       <div className="text-center mt-8">
-        <p className="text-gray-600 dark:text-gray-400">
-          {numPages && <span>Page 1 of {numPages}</span>}
-        </p>
         <p className="text-gray-600 dark:text-gray-400 mt-2">
           If the PDF does not load, please <a href="/Liu_Evan_Resume_APRIL2025.pdf" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">click here</a> to open it directly.
         </p>
