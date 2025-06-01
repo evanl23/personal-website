@@ -44,7 +44,6 @@ function Projects() {
   return (
     <Section 
       title="Projects" 
-      subtitle="Check out some of my recent work"
     >
       <div className="container grid gap-8 lg:gap-14 lg:grid-cols-2">
         {projects.map(({ id, title, description, technologies, github, live, image }) => (

@@ -35,16 +35,7 @@ function Resume() {
     <Section 
       title="Resume"
     > 
-    <div className="container mx-auto px-4 py-4">
-      <div className="text-center mb-8">
-        <a 
-          href="/Liu_Evan_Resume_APRIL2025.pdf" 
-          download 
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300 mb-8"
-        >
-          Download CV
-        </a>
-      </div>
+    <div className="container mx-auto px-4">
       
     <div className="flex justify-center">
       <div className="w-full max-w-5xl mx-auto shadow-lg rounded-lg overflow-hidden bg-white p-4">
@@ -77,11 +68,15 @@ function Resume() {
         </Document>
       </div>
     </div>
-      
-      <div className="text-center mt-8">
-        <p className="text-gray-600 dark:text-gray-400 mt-2">
-          If the PDF does not load, please <a href="/Liu_Evan_Resume_APRIL2025.pdf" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">click here</a> to open it directly.
-        </p>
+
+      <div className="text-center mb-8 py-8">
+        <a 
+          href="/Liu_Evan_Resume_APRIL2025.pdf" 
+          download 
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300 "
+        >
+          Download CV
+        </a>
       </div>
     </div>
     </Section>
