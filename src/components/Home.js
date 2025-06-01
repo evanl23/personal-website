@@ -82,7 +82,7 @@ const Home = () => {
 
             {/* Mobile timeline */}
             <div className="w-full max-w-screen-lg mx-auto py-20 px-4 lg:hidden">
-                <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">The Experience</h3>
+                <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Experience</h3>
                 <div className="py-6 px-2">
                     <MobileTimeline events={events}/>
                 </div>
@@ -90,7 +90,7 @@ const Home = () => {
 
             {/* Skills Carousel */}
             <div className="w-full max-w-screen-lg mx-auto px-4">
-                <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">The Skills</h3>
+                <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Skills</h3>
                 <main1 className="flex justify-center items-center bg-transparent py-8">
                     <CarouselR skills={skills} />
                 </main1>
