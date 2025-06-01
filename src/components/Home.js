@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import {FaArrowDown} from "react-icons/fa";
 import img from "../Assets/profile2.png";
 import Timeline from "./common/timeline";
@@ -30,7 +31,7 @@ const Home = () => {
         <section className="min-h-screen flex flex-col justify-start items-center p-2 text-center">
             <h1 className="mt-5 py-3 text-2xl font-black md:text-3xl">Welcome to the journey of...</h1>
 
-            <h2 className="text-6xl text-blue-500 uppercase font-black wave z-10 md:text-7xl">
+            <h2 className="text-6xl text-blue-500 uppercase font-black wave z-9 md:text-7xl">
                 <span className="text-8xl md:text-9xl">E</span>
                 <span>V</span>
                 <span>A</span>
@@ -46,7 +47,7 @@ const Home = () => {
                 Hello! So glad you are here! I am a Junior studying Computer Science at Boston University. 
                 I love the nitty-gritty aspects of programing and enjoy getting down and dirty in low level projects. {" "}
                 
-                <a href="/about" className="font-medium dark:text-blue-500 hover:dark:text-blue-700">Currently...</a>
+                <Link to="/about" className="font-medium dark:text-blue-500 hover:dark:text-blue-700">Currently...</Link>
             </p>
 
             <div className="mt-7"></div>
