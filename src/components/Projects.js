@@ -4,13 +4,13 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 function Projects() {
   const projects = [
     {
-      id: 1,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
-      technologies: ["React", "Tailwind CSS", "JavaScript"],
-      github: "https://github.com/evanl23/personal-website",
-      live: "https://evanpliu.com",
-      image: "/portfolio3.png" 
+      id: 1, 
+      title: "Handheld Raman Spectroscope",
+      description: "An iPhone detatchable device with the intent of identifying unique chemical signatures. The captured spectra is sent to an AWS service built with ECS Fargate and S3 to query for similar substances.",
+      technologies: ["FastAPI", "ECS Fargate", "AWS S3", "Qdrant"],
+      github: "https://github.com/evanl23/RamanSpectroscopy",
+      // live: "",
+      image: "/raman.png"
     },
     {
       id: 2,
@@ -24,11 +24,11 @@ function Projects() {
     {
       id: 3,
       title: "Terminal Geometry Dash",
-      description: "The popular Geometry Dash game by RobTop rebuilt for your terminal.",
-      technologies: ["C", "Linux"],
+      description: "An ASCII-style recreation of the popular Geometry Dash game by RobTop, designed to run in your terminal.",
+      technologies: ["C", "Linux", "Ncurses"],
       github: "https://github.com/evanl23/GeometryDash",
-      // live: "",
-      image: "/geo.jpg" 
+      live: "https://github.com/evanl23/terminal-dash?tab=readme-ov-file#terminal-dash",
+      image: "/terminal-dash-death.png" 
     },
     {
       id: 4,
@@ -38,7 +38,16 @@ function Projects() {
       github: "https://github.com/evanl23/Trading-Engine",
       // live: "",
       image: "/trading.avif"
-    }
+    },
+    {
+      id: 5,
+      title: "Portfolio Website",
+      description: "A responsive portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
+      technologies: ["React", "Tailwind CSS", "JavaScript"],
+      github: "https://github.com/evanl23/personal-website",
+      live: "https://evanpliu.com",
+      image: "/portfolio3.png" 
+    },
   ];
 
   return (
