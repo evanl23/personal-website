@@ -52,7 +52,7 @@ function Resume() {
           </div>
         )}
         
-        <Document file='/Liu_Evan_Resume_APRIL2025.pdf' onLoadSuccess={onDocumentLoadSuccess} onLoadError={onDocumentLoadError}
+        <Document file='/Liu_Evan_Resume_AUGUST2025.pdf' onLoadSuccess={onDocumentLoadSuccess} onLoadError={onDocumentLoadError}
           loading={null}
           className="flex justify-center"
         >
@@ -71,7 +71,7 @@ function Resume() {
 
       <div className="text-center mb-8 py-8">
         <a 
-          href="/Liu_Evan_Resume_APRIL2025.pdf" 
+          href="/Liu_Evan_Resume_AUGUST2025.pdf" 
           download 
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300 "
         >

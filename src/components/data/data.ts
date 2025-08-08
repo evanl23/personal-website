@@ -74,6 +74,13 @@ type Event = {
 
 export const events: Event[] = [
   {
+    title: "Consultant / Frontend developer",
+    company: "Azabu Insights",
+    description: "",
+    direction: "left",
+    date: "June 2025 - Present"
+  },
+  {
     title: "Co-founder / Backend Engineer",
     company: "TextMarley",
     description: "Founded own company with 2 teammates",
