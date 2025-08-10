@@ -10,19 +10,11 @@ function Projects() {
       technologies: ["Bash", "tput", "Nginx"],
       github: "https://github.com/evanl23/saturn.fm",
       live: "https://github.com/evanl23/saturn.fm?tab=readme-ov-file#installation",
-      image: "/demo.gif"
+      image: "/saturn.fm.png"
     },
     {
       id: 2, 
-      title: "Handheld Raman Spectroscope",
-      description: "An iPhone detatchable device with the intent of identifying unique chemical signatures. The captured spectra is sent to an AWS service built with ECS Fargate and S3 to query for similar substances.",
-      technologies: ["FastAPI", "ECS Fargate", "AWS S3", "Qdrant"],
-      github: "https://github.com/evanl23/RamanSpectroscopy",
-      image: "/raman.png"
-    },
-    {
-      id: 3, 
-      title: "Personal website reimagined",
+      title: "Personal Website Reimagined",
       description: "This is a terminal based website that is accessed through curl commands. Everything in my main website can be found here, just redrawn for command line compatibility.",
       technologies: ["Bash", "Nginx"],
       github: "https://github.com/evanl23/eliu.sh",
@@ -30,26 +22,34 @@ function Projects() {
       image: "/eliu.png"
     },
     {
-      id: 4, 
+      id: 3, 
       title: "Similar Song Finder",
-      description: "A music finder for song similarity based on the 'feel' of the audio. The metric is vectorized text and audio embeddings, and the similarity metric is cosine similarity.",
+      description: "A music finder based on the 'feel' of a song. The metric is vectorized text and audio embeddings using CLAP, and the similarity is calculated using cosine similarity.",
       technologies: ["NodeJS", "CLAP", "ECS Fargate", "Pinecone"],
       github: "https://github.com/evanl23/music-similarity",
       image: "/song.png"
     },
     {
+      id: 4, 
+      title: "Raman Spectroscopy Query System",
+      description: "Using AWS Fargate and Qdrant, this project provides the infrastructure for querying for similar Raman Spectra, vectors used for identifying unique chemical signatures.",
+      technologies: ["FastAPI", "ECS Fargate", "AWS S3", "Qdrant"],
+      github: "https://github.com/evanl23/RamanSpectroscopy",
+      image: "/raman.png"
+    },   
+    {
       id: 5,
-      title: "Personal AI Assistant",
-      description: "A proactive personal assistant that manages deadlines, meetings, and due-dates, all through SMS.",
-      technologies: ["Flask", "Firebase", "Google Cloud Run", "OpenAI Agents Framework"],
-      github: "https://github.com/evanl23/AI-Texting-Assistant",
-      live: "https://textmarley.com/",
-      image: "/marley.png" 
+      title: "Portfolio Website",
+      description: "A responsive portfolio website built with React and Tailwind CSS to showcase projects, skills, and experience.",
+      technologies: ["React", "Tailwind CSS", "JavaScript"],
+      github: "https://github.com/evanl23/personal-website",
+      live: "https://evanpliu.com",
+      image: "/portfolio3.png" 
     },
     {
       id: 6,
       title: "Terminal Geometry Dash",
-      description: "An ASCII-style recreation of the popular Geometry Dash game by RobTop, designed to run in your terminal.",
+      description: "An ASCII-style recreation of the popular Geometry Dash game by RobTop, designed to run in your terminal. Program is installed via a Homebrew tap.",
       technologies: ["C", "Linux", "Ncurses"],
       github: "https://github.com/evanl23/GeometryDash",
       live: "https://github.com/evanl23/terminal-dash?tab=readme-ov-file#-installation",
@@ -57,21 +57,21 @@ function Projects() {
     },
     {
       id: 7,
+      title: "SMS-Based AI Productivity Assistant",
+      description: "A proactive personal assistant that manages reminders, meetings, and due-dates, all through SMS. This project uses Twilio webhooks  and even supports Gmail and calendar integration.",
+      technologies: ["Flask", "Firebase", "Google Cloud Run", "OpenAI Agents Framework"],
+      github: "https://github.com/evanl23/AI-Texting-Assistant",
+      live: "https://textmarley.com/",
+      image: "/marley.png" 
+    },
+    {
+      id: 8,
       title: "Trading Engine",
       description: "Trading Engine Server that hosts servers for trading securities, allows clients to create orders, and match orders between clients.",
       technologies: ["C#", ".NET"],
       github: "https://github.com/evanl23/Trading-Engine",
       // live: "",
       image: "/trading.avif"
-    },
-    {
-      id: 8,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
-      technologies: ["React", "Tailwind CSS", "JavaScript"],
-      github: "https://github.com/evanl23/personal-website",
-      live: "https://evanpliu.com",
-      image: "/portfolio3.png" 
     },
   ];
 
