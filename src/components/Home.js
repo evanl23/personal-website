@@ -29,9 +29,10 @@ const Home = () => {
 
     return (
         <section className="min-h-screen flex flex-col justify-start items-center p-2 text-center">
-            <h1 className="mt-5 py-3 text-2xl font-black md:text-3xl">Welcome to the journey of...</h1>
+            <div className="min-h-screen flex flex-col justify-start items-center p-2 text-center">
+              <h1 className="mt-5 py-3 text-2xl font-black md:text-3xl">Welcome to the journey of...</h1>
 
-            <h2 className="text-6xl text-blue-500 uppercase font-black wave z-9 md:text-7xl">
+              <h2 className="text-6xl text-blue-500 uppercase font-black wave z-9 md:text-7xl">
                 <span className="text-8xl md:text-9xl">E</span>
                 <span>V</span>
                 <span>A</span>
@@ -39,20 +40,20 @@ const Home = () => {
                 <span className="text-8xl md:text-9xl">L</span>
                 <span>I</span>
                 <span>U</span>
-            </h2>
+              </h2>
             
-            <div className="mt-5"></div>
+              <div className="mt-5"></div>
 
-            <p className="max-w-3xl font-black text-lg dark:text-gray-300 md:text-xl">
+              <p className="max-w-3xl font-black text-lg dark:text-gray-300 md:text-xl">
                 Hello! So glad you are here! I am a Junior studying Computer Science at Boston University. 
                 I love the nitty-gritty aspects of programing and enjoy getting down and dirty in low level projects. {" "}
                 
                 <Link to="/about" className="font-medium dark:text-blue-500 hover:dark:text-blue-700">Currently...</Link>
-            </p>
+              </p>
 
-            <div className="mt-7"></div>
+              <div className="mt-7"></div>
 
-            <div className="flex justify-center">
+              <div className="flex justify-center">
                 <div 
                     className="w-60 h-60 md:w-72 md:h-72 bg-gray-300 rounded-xl flex items-center justify-center text-gray-500"
                 >
@@ -64,17 +65,16 @@ const Home = () => {
                     />
                     }
                 </div>
-            </div>
+              </div>
 
-            <div className="mt-5"></div>
-
-            <div className="mt-5 down-arrow"> 
+              <div className="mt-5"></div>
+       
+              <div className="mt-5 down-arrow items-center"> 
                 <FaArrowDown className="text-gray-400 animate-bounce text-2xl"/>
+              </div>
             </div>
 
-            <div className="mt-5"></div>
-
-            <div className="py-20 px-10 hidden lg:block">
+            <div className="px-10 hidden lg:block">
                 <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Experience</h3>
                 <div className="py-4"></div>
 
@@ -90,7 +90,7 @@ const Home = () => {
             </div>
 
             {/* Skills Carousel */}
-            <div className="w-full max-w-screen-lg mx-auto px-4">
+            <div className="py-20 w-full max-w-screen-lg mx-auto px-4">
                 <h3 className="text-2xl font-black text-blue-400 text-left text-secondary">My Skills</h3>
                 <main1 className="flex justify-center items-center bg-transparent py-8">
                     <CarouselR skills={skills} />

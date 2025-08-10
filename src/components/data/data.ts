@@ -94,11 +94,4 @@ export const events: Event[] = [
     direction: "left",
     date: "September 2023 - December 2024"
   },
-  { 
-    title: "Professional Ski Instructor",
-    company: "Ullr Snow Sports",
-    description: "Founded own company with 2 teammates",
-    direction: "right",
-    date: "December 2019 - March 2023"
-  }
 ]
