@@ -74,18 +74,25 @@ type Event = {
 
 export const events: Event[] = [
   {
-    title: "Consultant / Frontend developer",
+    title: "Technology Intern",
+    company: "Fidelity Investments",
+    description: "",
+    direction: "right",
+    date: "June 2026 - August 2026"
+  },
+  {
+    title: "Consultant / Frontend Developer",
     company: "Azabu Insights",
     description: "",
     direction: "left",
-    date: "June 2025 - Present"
+    date: "June 2025 - September 2025"
   },
   {
     title: "Co-founder / Backend Engineer",
     company: "TextMarley",
     description: "Founded own company with 2 teammates",
     direction: "right",
-    date: "January 2025 - Present"
+    date: "January 2025 - August 2025"
   },
   {
     title: "Senior Quantitative Developer",
