@@ -50,7 +50,7 @@ function Connect() {
               <label className="capitalize text-sm py-2 font-light">Name</label>
               <input
                 type="text"
-                name="Name"
+                name="Name" required
                 placeholder="Your name"
                 className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
               />
@@ -59,7 +59,7 @@ function Connect() {
               <label className="capitalize text-sm py-2 font-light">Email</label>
               <input
                 type="email"
-                name="Email"
+                name="Email" required
                 placeholder="Your email address"
                 className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
               />
@@ -67,7 +67,7 @@ function Connect() {
             <div className="flex flex-col my-2">
               <label className="capitalize text-sm py-2 font-light">Message</label>
               <textarea
-                name="Message"
+                name="Message" required
                 rows="10"
                 placeholder="Your message here..."
                 className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white resize-none"
